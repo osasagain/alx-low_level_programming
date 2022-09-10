@@ -1,13 +1,13 @@
 #include <stdio.h>
 
- /**
- * main - lowercase alphabets
- *
- * Return: Always (Success)
- */
+/**
+* main - lowercase alphabets
+*
+* Return: Always (Success)
+*/
 
  int main(void)
- {
+{
 
 	char c;
 
@@ -16,6 +16,5 @@
 
 	putchar('\n');
 
-	return (0);
-
- } 
+	return (0); 
+}	
