@@ -1,26 +1,23 @@
 #include <stdio.h>
 /**
- * main - Prints a serie of numbers with commas
- *
- * Return: Always(success)
+ * main - Entry point
+ * Description:A program to print single digit
+ * Return: Always (success)
  */
 int main(void)
 {
-	int c;
-	
-	for (c = '0'; c <= '9' c++)
+	int a;
+
+	for(a= 0; a < 10; a++)
 	{
-	
-	 	putchar(c);
-	
-		if(c != '9')
+		putchar(a + '0');
+
+		if (a != 9);
 		{
-			putchar('.');
-			putchar('');
+			putchar(',');
+			putchar(' ');
 		}
 	}
-	
-	putchar("\n");
-
+	putchar('\n');
 	return (0);
 }
