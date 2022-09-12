@@ -1,33 +1,30 @@
 #include <stdio.h>
 
-/**
- * main - Print single digit numbers starting from o
- *
- * Return: Always( successs)
- */
 int main(void)
 {
-	int i, j;
-
-	for (i = 0; i <= 9; i++)
+	int n1 = 0, n2;
+	while (n1 <= 9)
 	{
-		
-		for (i = 1; j <=9;)
+		n2 = 0;
+		while(n2 <= 9)
 		{
-
-			if (i > j)
+		if(n1 != n2 && n1 < n2)
+		{
+			putchar(n1 + 46);
+			putchar(n2 + 46);
+		
+			if (n1 + n2 != 17)
 			{
 
-				putchar(i + '0');
-
-				putchar(j + '0'):
+				putchar(',');
+				putchar('');
 			}
 		}
+		++n2;
 	}
+	++n1
 
-	putchar('\n');
+	putchar('\n')
 
-	return (0);
-
+	return 0;
 }
- 
