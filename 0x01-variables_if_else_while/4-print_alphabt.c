@@ -1,25 +1,30 @@
 #include <stdio.h>
-
 /**
-* main - Ommit some alphabet
-*
-* Return: Always (Success)
-*/
-
+ * main - Entry point
+ * Description: ptints a-z in lowercase
+ * Return: Always (successful)
+ */
 int main(void)
 {
-	char c;
-	
-	for (c = 'a'; c <= 'z'; c++)
+
+	char alphabet;
+
+	for (alphabet = 'a'; alphabet = 'z'; alphabet++)
 	{
 		
-		if (c != 'e' && c != 'q')
+		if ((alphabet != 'e') && (alphabet !='q'))
 		{
-			putchar(c):
+
+			putchar(alphabet);
+
 		}
+
 	}
-	
+
 	putchar('\n');
-	
+
 	return (0);
+	
 }
+
+	
