@@ -1,29 +1,63 @@
 #include <stdio.h>
 /**
- * main - print if the number is positive, zero or negative
- *
- * Description: using the main function
- * Return: Always (successful)
+ * main - Entry point 
+ * Description: Print all combination of two digits
+ * Return: Always 0 (successful)
  */
-int main(void)
+int main (void)
 {
-	char ch;
+	int c, i, j, k;
 
-	for (ch = 'a'; ch <= 'z' ; ch++)
-	{
+	for (c = 48; c <= 57; c++)
 
-		putchar(ch);
+	
 
-	}
+		for (i = 48; i <= 57; i++)
 
-	for (ch = 'A' ; ch <= 'z' ; ch++)
-	{
+		{
 
-		putchar(ch);
+			for (k = 48; k <= 57; k++)
 
-	}
+			{
 
-	putchar('\n');
+				for (j = 48; j <= 57; j++)
 
-	return(0);
+				{
+
+				if (((k + j) > (c + i) && k >= c) || c < k)
+
+				{
+
+					putchar(c);
+					putchar(i);
+					putchar(' ');
+					putchar (k);
+					putchar(j);
+
+					if (c + i + k + j == 227 && c == 57)
+
+					{
+							
+					break;
+
+					}
+	
+					else  
+	
+					{
+
+					putchar(',');
+
+					putchar(' ');
+
+					}
+			 	}
+			
+				}
+			}
+		}
+
+      		putchar('\n');
+
+		return (0);
 }
