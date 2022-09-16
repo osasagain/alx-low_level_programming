@@ -1,7 +1,7 @@
-#infdef MAIN_H
+#ifndef MAIN_H
 #define MAIN_H
 
-#include <stadio.h>
+#include <stdio.h>
 
 void positive_or_negative(int i);
 int largest_number9(int a, int b, int c);
