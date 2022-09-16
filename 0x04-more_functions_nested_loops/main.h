@@ -20,4 +20,4 @@ void print_triangle(int size);
 void print_number(int n);
 int _putchar(char);
 
-#endif /*MAIN_H'/ 
+#endif /* MAIN_H */ 
