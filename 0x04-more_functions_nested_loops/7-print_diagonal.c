@@ -4,16 +4,31 @@
 /**
  * main - entry point
  *
- * Desription: Print a stright line parameter
+ * Desription: Print a stright diagonal line
  *
  * Return: 0
  */
 
-void print_lin(int n)
+void print_diagonal(int n)
 {
-	while (n -- > 0)
+	int len, space;
+
+	if (n > 0)
 	{
-		putchar('_');
+		for (len = 0; len < n; len++)
+		{
+			for (space = 0; space < len; space++)
+			{
+				putchar(' ');
+			}
+			putchar('\\');
+			if (len == (n - 1))
+			{
+			continue;
+			}
+			putchar('\n');
+		}
+
 	}
 	putchar('\n');
 }
