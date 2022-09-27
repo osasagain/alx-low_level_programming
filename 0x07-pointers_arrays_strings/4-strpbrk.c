@@ -4,7 +4,6 @@
  * _strpbrk - searches a string
  * @s: check string
  * @accept: string to check against 
- *
  * Return: byte to matches or null if not match
  */
 
