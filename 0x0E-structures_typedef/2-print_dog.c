@@ -6,6 +6,7 @@
  *
  * @d: Pointer to struct dog
  *
+ * Return: always successful
  */
 
 void print_dog(struct dog *d)
