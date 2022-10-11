@@ -7,11 +7,11 @@ void fillMem(char *str, int strLen, char *dest);
 /**
  * new_dog - Creates a new dog
  *
- * @name: Name of dog
+ * @name: dog name
+ * 
+ * @age: dog age
  *
- * @age: Age of dog
- *
- * @owner: Owner of dog
+ * @owner:dog owner
  *
  * Return: Pointer to the newly created dog (SUCCESS) or
  * NULL if insufficient memory was available (FAILURE)
